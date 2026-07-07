@@ -2,29 +2,35 @@
 
 A machine learning web app that classifies news articles as **Real** or **Fake** using TF-IDF vectorization and Logistic Regression, deployed with Streamlit.
 
-## Tech Stack
+## 🚀 Live Demo
+[Add your Streamlit link here once deployed]
+
+## 🛠️ Tech Stack
 - Python, Pandas
 - Scikit-learn (TF-IDF, Logistic Regression)
 - Streamlit (web app + deployment)
 
-## Dataset
+## 📊 Dataset
 [Fake and Real News Dataset (Kaggle)](https://www.kaggle.com/datasets/clmentbisaillon/fake-and-real-news-dataset)
 
-## How it works
-1. News articles are cleaned (lowercased, punctuation/links removed).
-2. Text is converted into numerical features using TF-IDF.
-3. A Logistic Regression model is trained to classify Real vs Fake.
-4. A Streamlit app lets users paste any news text and get an instant prediction with confidence score.
+## ⚙️ How it Works
+1. News articles are cleaned (lowercased, links/punctuation removed)
+2. Text is converted into numerical features using TF-IDF
+3. A Logistic Regression model is trained to classify Real vs Fake news
+4. A Streamlit web app lets users paste any news text and get an instant prediction with confidence score
 
-## Run locally
+## 💻 Run Locally
 ```bash
+git clone https://github.com/Manish1Gupta/fake-news-detector.git
+cd fake-news-detector
 pip install -r requirements.txt
-python train_model.py     # trains and saves the model (run once)
+python train_model.py     # trains and saves the model
 streamlit run app.py      # launches the web app
 ```
 
-## Results
-Achieved ~95% accuracy on the held-out test set (see console output from `train_model.py`).
+## 📈 Results
+Achieved ~95% accuracy on the held-out test set.
 
-## Live Demo
-[Add your deployed Streamlit link here]
+## 👤 Author
+**Manish Gupta**
+[GitHub](https://github.com/Manish1Gupta)
